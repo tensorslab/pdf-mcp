@@ -54,6 +54,37 @@ PDF 工具箱是一个面向 Agent 的 MCP 文件处理服务，通过 Streamabl
 
 DCR、`state`、PKCE、授权码兑换、Access Token 和 Refresh Token 均由豆包与 MiaoDashi 自动完成，用户无需手动复制授权码或 Token。Access Token 过期后，豆包使用 Refresh Token 自动续期。
 
+### Claude 接入步骤
+
+将以下指令发送给 Claude：
+
+```text
+帮我在设置里添加一个新的 MCP 连接器，地址是 https://api.tensormaster.com/pdf/mcp。添加后提醒我确认授权页面上的权限范围，再点同意。
+```
+
+然后按以下步骤完成授权：
+
+1. 退出 Claude，再重新进入 Claude。
+2. 输入 `/mcp`，选择 PDF 服务并进行授权。
+3. 确认授权成功后，即可使用 PDF 工具箱。
+
+### Codex（ChatGPT）接入步骤
+
+1. 打开 **设置 → 插件 → 添加 → 添加 MCP 服务器**。
+2. 填写：
+
+   ```text
+   名称：pdf
+   类型：流式 HTTP
+   URL：https://api.tensormaster.com/pdf/mcp
+   ```
+
+3. 点击“保存”。
+4. 点击“进行身份验证”，注册或登录 MiaoDashi 网站，并在授权页面确认权限后点击“同意”。
+5. 返回设置页，确认“进行身份验证”按钮消失，即表示授权成功，可以使用 PDF 工具箱。
+
+> ChatGPT 的菜单名称可能因账号、工作区权限或版本略有差异；如果看不到添加 MCP 服务器入口，请先确认已启用相应的开发者模式或自定义连接器权限。
+
 ## 4. 手动 API Key：兼容方式
 
 ### 4.1 获取 API Key

@@ -54,6 +54,37 @@ In Doubao:
 
 DCR, `state`, PKCE, authorization-code exchange, Access Token, and Refresh Token handling are automatic between Doubao and MiaoDashi. The user does not need to copy an authorization code or Token. Doubao renews an expired Access Token with the Refresh Token.
 
+### Claude setup
+
+Send the following instruction to Claude:
+
+```text
+Please add a new MCP connector in Settings at https://api.tensormaster.com/pdf/mcp. After adding it, remind me to review the permission scopes on the authorization page before clicking Agree.
+```
+
+Then complete authorization:
+
+1. Exit Claude and open it again.
+2. Enter `/mcp`, select the PDF service, and authorize it.
+3. Confirm that authorization succeeded, then use PDF Toolkit.
+
+### Codex (ChatGPT) setup
+
+1. Open **Settings → Plugins → Add → Add MCP server**.
+2. Enter:
+
+   ```text
+   Name: pdf
+   Type: Streamable HTTP
+   URL: https://api.tensormaster.com/pdf/mcp
+   ```
+
+3. Click **Save**.
+4. Click **Authenticate**, register or sign in to MiaoDashi, review the permission scopes, and click **Agree**.
+5. Return to Settings. When the **Authenticate** button disappears, authorization has succeeded and PDF Toolkit is ready to use.
+
+> ChatGPT menu names may vary slightly by account, workspace permissions, or version. If the Add MCP server entry is unavailable, confirm that developer mode or custom-connector access is enabled.
+
 ## 4. Manual API Key: compatibility method
 
 ### 4.1 Create a Key
