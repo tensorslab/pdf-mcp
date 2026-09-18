@@ -5,6 +5,7 @@
 [![MCP](https://img.shields.io/badge/MCP-Streamable%20HTTP-5B5BD6)](https://modelcontextprotocol.io/)
 [![OAuth](https://img.shields.io/badge/Auth-OAuth%202.1%20%2B%20API%20Key-0F766E)](#3-oauth-recommended-for-doubao)
 [![PDF Tools](https://img.shields.io/badge/Tools-PDF%20%2F%20Image%20Processing-EA580C)](#5-tool-list)
+[![smithery badge](https://smithery.ai/badge/bob-rsef/pdf-toolkit)](https://smithery.ai/servers/bob-rsef/pdf-toolkit)
 
 PDF Toolkit is an Agent-oriented MCP file-processing service. Over Streamable HTTP, it converts PDFs/images to Word, Excel, and Markdown, splits and merges PDFs, creates PDFs from images, adds text watermarks, and provides asynchronous task lookup. It supports OAuth and manual API Key authorization.
 
