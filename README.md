@@ -5,9 +5,9 @@
 [![MCP](https://img.shields.io/badge/MCP-Streamable%20HTTP-5B5BD6)](https://modelcontextprotocol.io/)
 [![OAuth](https://img.shields.io/badge/Auth-OAuth%202.1%20%2B%20API%20Key-0F766E)](#3-oauth豆包推荐方式)
 [![PDF Tools](https://img.shields.io/badge/Tools-PDF%20%2F%20Image%20Processing-EA580C)](#5-工具列表)
+[![MCP Registry - com.tensormaster/pdf](https://img.shields.io/badge/MCP%20Registry-com.tensormaster%2Fpdf-111827?logo=modelcontextprotocol&logoColor=white)](https://registry.modelcontextprotocol.io/)
+[![pdf-mcp MCP connector – tool definition quality and endpoint health on Glama](https://glama.ai/mcp/connectors/com.tensormaster.api/pdf-mcp/badges/score.svg)](https://glama.ai/mcp/connectors/com.tensormaster.api/pdf-mcp)
 [![Smithery - PDF Toolkit](https://img.shields.io/badge/Smithery-PDF%20Toolkit-7C3AED?logo=smithery&logoColor=white)](https://smithery.ai/servers/bob-rsef/pdf-toolkit)
-
-[Smithery 服务页](https://smithery.ai/servers/bob-rsef/pdf-toolkit) · [Smithery 徽章地址](https://smithery.ai/badge/bob-rsef/pdf-toolkit)
 
 PDF 工具箱是一个面向 Agent 的 MCP 文件处理服务，通过 Streamable HTTP 提供 PDF/图片转 Word、Excel、Markdown、PDF 拆分合并、图片转 PDF、文字水印和异步任务查询能力。支持 OAuth 和手动 API Key 两种授权方式。
 
